@@ -1,0 +1,21 @@
+ param names	:  custom1       custom2       custom3       custom4       custom5       sd_{\delta{} T }sd_{T D }     sd_{\beta{} D }sd_{A D }     sd_{\alpha{} sync }sd_{\omega{} sync }sd_{A sync }  sd_{T e }     sd_{EM }      sd_{\nu{} p spin }sd_{A spin }  sd_{A CO }    sd_{y reio nuisance }y_{sd }       \mu{}_{sd }   
+ R-1 values	:  1.065639	 1.489671	 1.220073	 0.576340	 0.576343	 0.576250	 0.929691	 0.553737	 0.456708	 0.136807	 0.215825	 0.465298	 0.335351	 0.335752	 1.517601	 0.905896	 0.892324	 0.892329	 0.001907	 0.002022	
+ Best Fit  	: -9.350591e+01	 4.300892e+01	 1.888260e+02	 6.434466e-06	 3.301103e-09	-1.572412e-07	 2.098596e+01	 1.531125e+00	 1.489866e+06	 8.631974e-01	-1.103082e+00	 7.178814e+02	 9.782419e+03	 1.503089e+01	 2.180754e+01	 1.799107e+03	 1.121113e+00	 1.060289e-06	 1.069530e-06	 1.235785e-07	
+ mean      	: -6.064821e+01	 9.260708e+00	 3.127747e+01	 4.302209e-01	 2.365020e-09	-1.197642e-07	 2.099739e+01	 1.531001e+00	 1.489784e+06	 5.290828e+00	-2.256402e-01	 9.100922e+02	 9.276292e+03	 1.495651e+01	 2.210053e+01	 1.516849e+03	 1.119767e+00	 1.260041e-06	 1.263528e+00	 5.553345e+00	
+ sigma     	:  nan	 nan	 nan	 nan	 nan	 nan	 1.956037e-03	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 1.538885e-07	 2.628303e+02	 1.154831e+03	
+
+ 1-sigma - 	:  nan	 nan	 nan	 nan	 nan	 nan	-1.033930e-03	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	-2.265101e-07	-1.263527e+00	-5.553345e+00	
+ 1-sigma + 	:  nan	 nan	 nan	 nan	 nan	 nan	 2.878144e-03	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 8.126677e-08	 5.243970e+02	 2.304108e+03	
+ 2-sigma - 	:  nan	 nan	 nan	 nan	 nan	 nan	-5.719692e-03	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	-1.263527e+00	-5.553345e+00	
+ 2-sigma + 	:  nan	 nan	 nan	 nan	 nan	 nan	 4.657177e-03	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 9.461493e+02	 4.157207e+03	
+ 3-sigma - 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	-1.263527e+00	-5.553345e+00	
+ 3-sigma + 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 1.142432e+03	 5.019634e+03	
+
+ 1-sigma > 	:  nan	 nan	 nan	 nan	 nan	 nan	 2.099636e+01	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 1.033531e-06	 3.431761e-07	 3.740456e-08	
+ 1-sigma < 	:  nan	 nan	 nan	 nan	 nan	 nan	 2.100027e+01	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 1.341308e-06	 5.256605e+02	 2.309661e+03	
+ 2-sigma > 	:  nan	 nan	 nan	 nan	 nan	 nan	 2.099167e+01	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 3.431761e-07	 3.740456e-08	
+ 2-sigma < 	:  nan	 nan	 nan	 nan	 nan	 nan	 2.100205e+01	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 9.474129e+02	 4.162760e+03	
+ 3-sigma > 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 3.431761e-07	 3.740456e-08	
+ 3-sigma < 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 1.143695e+03	 5.025187e+03	
+ 95% > 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 3.431761e-07	 3.740456e-08	
+ 95% < 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 9.352676e+02	 4.109397e+03	

@@ -1,0 +1,118 @@
+#-----CLASS v3.2.3 (branch: , hash: )-----
+
+#------Experiments to test (separated with commas)-----
+data.experiments=['pixie']
+
+#------ Settings for the over-sampling.
+data.over_sampling=[1, 10]
+
+#------ Parameter list -------
+# data.parameters[class name] = [mean, min, max, 1-sigma, scale, role]
+# - if min max irrelevant, put to -1 or None (if you want a boundary of -1, use -1.0)
+# - if fixed, put 1-sigma to 0
+# - if scale irrelevant, put to 1, otherwise to the appropriate factor
+# - role is either 'cosmo', 'nuisance' or 'derived'
+
+# Cosmological parameters list
+data.parameters['custom1']      = [-0.1, None, None, 10, 1, 'cosmo']
+data.parameters['custom2']      = [9.25, None, None, 10, 1,  'cosmo']
+data.parameters['custom3']      = [2.45, None, None, 10, 1, 'cosmo']
+data.parameters['custom4']      = [  0.9665,  None, None,   0.0038,  1,    'cosmo']
+data.parameters['custom5']      = [2.105e-9,  None, None,  3.0e-11,  1,    'cosmo']
+
+# Nuisance parameters list
+data.parameters['sd_delta_T']        = [     0.0,  None, None,    5e-10,  1, 'nuisance']
+data.parameters['sd_T_D']            = [     21.,  None, None,     5e-5,  1, 'nuisance']
+data.parameters['sd_beta_D']         = [    1.53,  None, None,     5e-6,  1, 'nuisance']
+data.parameters['sd_A_D']            = [  1.49e6,    0., None,      0.5,  1, 'nuisance']
+data.parameters['sd_T_CIB']          = [    18.8,  None, None,      0.0,  1, 'nuisance']
+data.parameters['sd_beta_CIB']       = [    0.86,  None, None,      0.0,  1, 'nuisance']
+data.parameters['sd_A_CIB']          = [  4.10e5,    0., None,      0.0,  1, 'nuisance']
+data.parameters['sd_alpha_sync']     = [    0.82,  None, None,    0.005,  1, 'nuisance']
+data.parameters['sd_omega_sync']     = [     0.2,  None, None,    0.005,  1, 'nuisance']
+data.parameters['sd_A_sync']         = [    288.,    0., None,       1.,  1, 'nuisance']
+data.parameters['sd_T_e']            = [   7000.,  None, None,      10.,  1, 'nuisance']
+data.parameters['sd_EM']             = [     15.,  None, None,    0.001,  1, 'nuisance']
+data.parameters['sd_nu_p_spin']      = [     19.,  None, None,     0.05,  1, 'nuisance']
+data.parameters['sd_A_spin']         = [ 1485.33,    0., None,       5.,  1, 'nuisance']
+data.parameters['sd_A_CO']           = [      1.,    0., None,     5e-4,  1, 'nuisance']
+# Only activate if you want to marginalize over y_reio * Y(x) instead of using actual CLASS to do it for you using the SZ equations
+data.parameters['sd_y_reio_nuisance']= [ 1.77e-6,  None, None,    5e-10,  1, 'nuisance']
+# Only activate for tests!
+#data.parameters['sd_mu_nuisance']    = [     0.0,  None, None,       0.,  1, 'nuisance']
+
+# Derived parameter list
+data.parameters['y_sd']              = [       0,  None, None,        0,  1,  'derived']
+data.parameters['mu_sd']             = [       0,  None, None,        0,  1,  'derived']
+
+
+# Current values are from  Planck 2015 (1502.01589 table 4 penultimate column, except for tau_reio, which was taken from 1605.02985 table 8) (reproduces the fiducial used in 1910.04619)
+data.cosmo_arguments['omega_b'] = 0.02226
+data.cosmo_arguments['omega_cdm'] = 0.1193
+data.cosmo_arguments['h'] = 0.6751
+data.cosmo_arguments['tau_reio'] = 0.0596
+
+# Note that the "tCl" argument is needed due to a small bug in CLASS, which will be fixed soon
+data.cosmo_arguments['output'] = 'tCl, Sd, mPk'
+data.cosmo_arguments['sd_branching_approx'] = 'exact'
+data.cosmo_arguments['sd_PCA_size'] = 2
+data.cosmo_arguments['Pk_ini_type'] = 'external_Pk'
+data.cosmo_arguments['command'] = 'python3 ~/masterProject/Pk_generator.py'
+data.cosmo_arguments['write_distortions'] = 'y'
+data.cosmo_arguments['distortions_verbose'] = 1
+data.cosmo_arguments['sd_detector_name'] = 'PIXIE'
+data.cosmo_arguments['YHe'] = 'BBN'
+
+
+#------ Mcmc parameters ----
+# Number of steps taken, by default (overwritten by the -N command)
+data.N=10
+# Number of accepted steps before writing to file the chain. Larger means less
+# access to disc, but this is not so much time consuming.
+data.write_step=5
+
+
+#-----Likelihood-pixie-----
+pixie.data_directory = '/home/p12/masterProject/montepython/montepython_public/data'
+pixie.fiducial_file = 'pixie_fiducial.dat'
+pixie.noise_from_file = False
+pixie.detector = 'PIXIE'
+pixie.detector_nu_min = 30
+pixie.detector_nu_max = 1005
+pixie.detector_nu_delta = 15
+pixie.detector_delta_Ic = 5
+pixie.use_nuisance = ['sd_delta_T', 'sd_T_D', 'sd_beta_D', 'sd_A_D', 'sd_T_CIB', 'sd_beta_CIB', 'sd_A_CIB', 'sd_alpha_sync', 'sd_omega_sync', 'sd_A_sync', 'sd_T_e', 'sd_EM', 'sd_nu_p_spin', 'sd_A_spin', 'sd_A_CO', 'sd_y_reio_nuisance']
+pixie.sd_delta_T_prior_center = 0.0
+pixie.sd_delta_T_prior_sigma = 0.00022
+pixie.sd_T_D_prior_center = 21.0
+pixie.sd_T_D_prior_sigma = 2.0
+pixie.sd_beta_D_prior_center = 1.53
+pixie.sd_beta_D_prior_sigma = 0.05
+pixie.sd_T_C_prior_center = 18.8
+pixie.sd_T_C_prior_sigma = 1.2
+pixie.sd_beta_C_prior_center = 0.86
+pixie.sd_beta_C_prior_sigma = 0.12
+pixie.sd_alpha_S_prior_center = 0.82
+pixie.sd_alpha_S_prior_sigma = 0.082
+pixie.sd_A_S_prior_center = 288.0
+pixie.sd_A_S_prior_sigma = 28.8
+pixie.sd_T_e_prior_center = 7000.0
+pixie.sd_T_e_prior_sigma = 500.0
+pixie.sd_EM_prior_center = 15.0
+pixie.sd_EM_prior_sigma = 35.0
+pixie.sd_nu_p_sd_prior_center = 19.0
+pixie.sd_nu_p_sd_prior_sigma = 1.0
+pixie.sd_y_reio_sd_prior_center = 1.77e-06
+pixie.sd_y_reio_sd_prior_sigma = 1.57e-06
+
+
+#-----------Cosmological-arguments---------
+data.cosmo_arguments.update({'omega_b': 0.02226, 'omega_cdm': 0.1193, 'h': 0.6751, 'tau_reio': 0.0596, 'output': 'tCl, Sd, mPk sd', 'sd_branching_approx': 'exact', 'sd_PCA_size': 2, 'Pk_ini_type': 'external_Pk', 'command': 'python3 ~/masterProject/Pk_generator.py', 'write_distortions': 'y', 'distortions_verbose': 1, 'sd_detector_name': 'PIXIE', 'YHe': 'BBN', 'modes': 's', 'sd_detector_nu_min': 30, 'sd_detector_nu_max': 1005, 'sd_detector_nu_delta': 15, 'sd_detector_delta_Ic': 5})
+
+
+#--------Default-Configuration------
+data.path['root']	= '/home/p12/masterProject/montepython/montepython_public'
+data.path['MontePython']	= '/home/p12/masterProject/montepython/montepython_public/montepython'
+data.path['data']	= '/home/p12/masterProject/montepython/montepython_public/data'
+data.path['cosmo']	= '/home/p12/masterProject/class_public-3.2.3'
+data.path['clik']	= '/home/p12/masterProject/code/plc_3.0/plc-3.01'
