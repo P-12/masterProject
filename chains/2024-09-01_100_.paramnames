@@ -1,0 +1,20 @@
+custom1 	 custom1 
+custom2 	 custom2 
+custom3 	 custom3 
+custom4 	 10^{-9}custom4 
+custom5 	 custom5 
+sd_delta_T 	 sd_{\delta{} T } 
+sd_T_D 	 sd_{T D } 
+sd_beta_D 	 sd_{\beta{} D } 
+sd_A_D 	 sd_{A D } 
+sd_alpha_sync 	 sd_{\alpha{} sync } 
+sd_omega_sync 	 sd_{\omega{} sync } 
+sd_A_sync 	 sd_{A sync } 
+sd_T_e 	 sd_{T e } 
+sd_EM 	 sd_{EM } 
+sd_nu_p_spin 	 sd_{\nu{} p spin } 
+sd_A_spin 	 sd_{A spin } 
+sd_A_CO 	 sd_{A CO } 
+sd_y_reio_nuisance 	 sd_{y reio nuisance } 
+y_sd 	 y_{sd } 
+mu_sd 	 \mu{}_{sd } 
