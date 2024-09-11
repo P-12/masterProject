@@ -1,0 +1,21 @@
+param names    	:  R-1        Best fit    mean        sigma       1-sigma -   1-sigma +   2-sigma -   2-sigma +   1-sigma >   1-sigma <   2-sigma >   2-sigma <   95% CL >    95% CL <   
+custom1        	:  0.0000e+00-5.1611e+01 -5.1611e+01  2.1838e-02  3.1616e-03  4.6838e-02 -1.4331e-02  6.4331e-02 -5.1608e+01 -5.1564e+01 -5.1625e+01 -5.1547e+01 -5.1625e+01 -5.1547e+01
+custom2        	:  0.0000e+00-1.3136e+01 -1.3136e+01  2.1838e-02  3.1616e-03  4.6838e-02 -1.4331e-02  6.4331e-02 -1.3133e+01 -1.3089e+01 -1.3151e+01 -1.3072e+01 -1.3150e+01 -1.3072e+01
+custom3        	:  0.0000e+00 1.5190e+01  1.5190e+01  2.1838e-02  3.1616e-03  4.6838e-02 -1.4331e-02  6.4331e-02  1.5193e+01  1.5237e+01  1.5176e+01  1.5254e+01  1.5176e+01  1.5254e+01
+custom4        	:  0.0000e+00 1.1671e-05  1.1671e-05  2.1838e-02  3.1616e-03  4.6838e-02 -1.4331e-02  6.4331e-02  3.1733e-03  4.6850e-02 -1.4319e-02  6.4343e-02 -1.3807e-02  6.3830e-02
+custom5        	:  0.0000e+00 2.3102e-09  2.3102e-09  2.1838e-02  3.1616e-03  4.6838e-02 -1.4331e-02  6.4331e-02  3.1616e-03  4.6838e-02 -1.4331e-02  6.4331e-02 -1.3818e-02  6.3818e-02
+sd_{\delta{} T }	:  0.0000e+00-1.3153e-07 -1.3090e-07  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan
+sd_{T D }      	:  0.0000e+00 2.0997e+01  2.0997e+01  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan
+sd_{\beta{} D }	:  0.0000e+00 1.5303e+00  1.5303e+00  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan
+sd_{A D }      	:  0.0000e+00 1.4898e+06  1.4898e+06  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan
+sd_{\alpha{} sync }	:  0.0000e+00 4.6368e-01  4.7047e-01  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan
+sd_{\omega{} sync }	:  0.0000e+00 6.9481e-01  7.4043e-01  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan
+sd_{A sync }   	:  0.0000e+00 3.8364e+02  3.8582e+02  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan
+sd_{T e }      	:  0.0000e+00 7.6574e+03  7.9181e+03  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan
+sd_{EM }       	:  0.0000e+00 1.4896e+01  1.4887e+01  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan
+sd_{\nu{} p spin }	:  0.0000e+00 1.4347e+01  1.4147e+01  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan
+sd_{A spin }   	:  0.0000e+00 2.4623e+03  2.4267e+03  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan
+sd_{A CO }     	:  0.0000e+00 1.0117e+00  1.0166e+00  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan  nan
+sd_{y reio nuisance }	:  0.0000e+00-1.8902e-07 -1.8784e-07  1.8522e-09 -2.0886e-09  1.6158e-09  nan  nan -1.8993e-07 -1.8622e-07  nan  nan  nan  nan
+y_{sd }        	:  0.0000e+00 1.9404e-06  1.9404e-06  2.1838e-02 -4.6838e-02 -3.1616e-03 -6.4331e-02  1.4331e-02 -4.6836e-02 -3.1597e-03 -6.4329e-02  1.4333e-02 -6.3816e-02  1.3820e-02
+\mu{}_{sd }    	:  0.0000e+00 2.2689e-07  2.2689e-07  2.1838e-02  3.1616e-03  4.6838e-02 -1.4331e-02  6.4331e-02  3.1618e-03  4.6839e-02 -1.4331e-02  6.4331e-02 -1.3818e-02  6.3819e-02
